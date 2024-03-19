@@ -31,6 +31,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: true
+          #테마 설정까지 받을 수 있도록 깃허브 저장소에 다른 깃 저장소를 연결
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Setup Hugo
